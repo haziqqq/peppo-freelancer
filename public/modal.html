@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Peppo Freelancer - Modal Display</title>
+
+    <link rel="stylesheet" href="main.css">
+</head>
+
+<body class="font-body">
+
+
+    <div class="container">
+        <div class="flex justify-center h-screen items-center">
+            <button
+                class="type block text-white bg-primary focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+                type="button" data-modal-toggle="authentication-modal">
+                Klik untuk menampilkan modal
+            </button>
+        </div>
+    </div>
+
+    <div id="authentication-modal" aria-hidden="true"
+        class="hidden overflow-x-hidden overflow-y-auto fixed h-modal md:h-full top-4 left-0 right-0 md:inset-0 z-50 justify-center items-center">
+        <div class="relative w-full max-w-2xl px-4 h-full md:h-auto">
+
+            <div class="bg-white px-4 lg:px-10 py-4 lg:pt-5 lg:pb-10 rounded-lg shadow relative dark:bg-gray-700">
+                <div class="flex justify-between mt-3">
+                    <h3 class="text-sm lg:text-xl font-semibold">Buat Penawaran</h3>
+                    <button type="button"
+                        class="text-gray-400 bg-dark-150 hover:bg-gray-200 hover:text-gray-900 rounded-2xl text-sm p-1.5 ml-auto inline-flex items-center dark:hover:bg-gray-800 dark:hover:text-white"
+                        data-modal-toggle="authentication-modal">
+                        <svg class="w-4 lg:w-6" fill="currentColor" viewBox="0 0 20 20"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd"
+                                d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+                                clip-rule="evenodd"></path>
+                        </svg>
+                    </button>
+                </div>
+
+                <form class="mt-5 lg:mt-8" action="">
+
+                    <div class="flex flex-col-reverse lg:grid lg:grid-rows-1 lg:grid-cols-12 gap-x-4">
+                        <!-- Textinput  -->
+                        <div class="w-full col-span-7 flex">
+                            <span
+                                class="inline-flex items-center py-4 px-4 rounded-l-md border-none border-r-0 bg-dark-150 text-dark-650 text-xs lg:text-base font-medium">
+                                IDR
+                            </span>
+                            <input type="text" id="website-admin"
+                                class="font-medium rounded-none rounded-r-lg bg-transparent border border-dark-50 border-l-0 text-xs lg:text-base text-dark-600 focus:ring-blue-500 focus:border-blue-500 block flex-1 min-w-0 w-full py-3.5 px-3 lg:px-5"
+                                value="350.000,00 / Hari">
+                        </div>
+                        <!-- End Textinput -->
+
+                        <!-- Dropdown -->
+                        <div class="w-full col-span-5 flex">
+                            <div class="select_wrap w-full relative select-none">
+                                <ul class="default__option bg-white border border-dark-50 rounded-lg mb-4 lg:mb-0">
+                                    <li class="px-4 py-4">
+                                        <div class="option pizza">
+                                            <p class="font-medium text-sm lg:text-base">Perjam</p>
+                                        </div>
+                                    </li>
+                                </ul>
+                                <ul
+                                    class="select_ul hidden px-2.5 py-3.5 mt-1 lg:mt-3 bg-white absolute top-14 border border-dark-50 rounded-lg">
+                                    <li class="rounded-md hover:text-primary">
+                                        <div class="option pizza">
+                                            <p class="font-medium text-sm lg:text-base">Perjam</p>
+                                        </div>
+                                    </li>
+                                    <li class="rounded-md hover:text-primary">
+                                        <div class="option burger">
+                                            <p class="font-medium text-sm lg:text-base">Harian</p>
+                                        </div>
+                                    </li>
+                                    <li class="rounded-md hover:text-primary">
+                                        <div class="option ice">
+                                            <p class="font-medium text-sm lg:text-base">Mingguan</p>
+                                        </div>
+                                    </li>
+                                    <li class="rounded-md hover:text-primary">
+                                        <div class="option fries">
+                                            <p class="font-medium text-sm lg:text-base">Perprojek</p>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!-- End Dropdown -->
+                    </div>
+
+                    <!-- Textarea -->
+                    <div class="col-span-12 my-4">
+                        <textarea id="message" rows="4"
+                            class="message bg-white border border-dark-50 font-medium placeholder-dark-450 text-xs lg:text-base leading-6 text-dark-600 rounded-lg block w-full p-2.5 lg:p-3.5"
+                            placeholder="Tulis deskripsi Penawaran"></textarea>
+                    </div>
+                    <!-- End -->
+
+                    <!-- CTA -->
+                    <button
+                        class="col-span-12 rounded-lg bg-primary text-white w-full font-semibold text-xs lg:text-base py-4 lg:py-5">Ajukan
+                        Penawaran</button>
+                    <!-- End  -->
+
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://unpkg.com/@themesberg/flowbite@1.2.0/dist/flowbite.bundle.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $(".default__option").click(function () {
+                $(this).parent().toggleClass("active");
+            })
+
+            $(".select_ul li").click(function () {
+                var currentElement = $(this).html();
+                $(".default__option li").html(currentElement);
+                $(this).parents(".select_wrap").removeClass("active");
+            })
+        });
+    </script>
+
+</body>
+
+</html>

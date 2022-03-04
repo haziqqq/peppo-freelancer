@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat Bubble</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body class="bg-body font-body">
+    <div class="container">
+        <div class="grid grid-cols-12 gap-10 my-10">
+            <div class="col-span-12 lg:col-span-6">
+                <div class="card">
+                    <h1 class="text-sm lg:text-base text-center">Chat Bubble 1</h1>
+                    <div class="chatBubble__buyer">
+                        <div class="">
+                            <h1 class="text-3xs lg:text-xs font-medium text-dark-250">11.02 WIB</h1>
+                        </div>
+                        <div class="flex flex-row gap-x-2 p-1 lg:p-2 border border-dark-50 rounded-xl w-48 lg:w-80 my-2">
+                            <img class="w-16 lg:w-29 h-auto object-cover rounded-lg" src="img/chatBubble.jpg" alt="">
+                            <h3 class="text-3xs lg:text-xs font-semibold lg:leading-4.5 mt-1">Saya akan merancang situs wordpress professional dan responsif modern</h3>
+                        </div>
+                        <div class="p-2 lg:px-3.5 lg:py-3 border border-dark-50 rounded-tr-sm rounded-xl w-auto">
+                            <h3 class="text-2xs lg:text-sm text-dark-350 font-medium lg:leading-5">Halo, saya membutuhkan desain website untuk salah satu bisnis saya</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-span-12 lg:col-span-6">
+                <div class="card">
+                    <h1 class="text-sm lg:text-base text-center">Chat Bubble 2</h1>
+                    <div class="chatBubble__buyer">
+                        <div class="">
+                            <h1 class="text-3xs lg:text-xs font-medium text-dark-250">11.02 WIB</h1>
+                        </div>
+                        <div class="flex flex-row gap-x-2 border border-dark-50 rounded-lg py-1.5 lg:py-2.5 pl-1.5 lg:pl-2.5 pr-3 lg:pr-5 my-2">
+                            <svg class="w-7 lg:w-9" viewBox="0 0 38 38" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="19" cy="19" r="19" fill="#FEF5CF"/>
+                                <path d="M22 23H16C15.7348 23 15.4804 23.1054 15.2929 23.2929C15.1054 23.4804 15 23.7348 15 24C15 24.2652 15.1054 24.5196 15.2929 24.7071C15.4804 24.8946 15.7348 25 16 25H22C22.2652 25 22.5196 24.8946 22.7071 24.7071C22.8946 24.5196 23 24.2652 23 24C23 23.7348 22.8946 23.4804 22.7071 23.2929C22.5196 23.1054 22.2652 23 22 23Z" fill="#FCCF10"/>
+                                <path d="M16 21H19C19.2652 21 19.5196 20.8946 19.7071 20.7071C19.8946 20.5196 20 20.2652 20 20C20 19.7348 19.8946 19.4804 19.7071 19.2929C19.5196 19.1054 19.2652 19 19 19H16C15.7348 19 15.4804 19.1054 15.2929 19.2929C15.1054 19.4804 15 19.7348 15 20C15 20.2652 15.1054 20.5196 15.2929 20.7071C15.4804 20.8946 15.7348 21 16 21Z" fill="#FCCF10"/>
+                                <path d="M26.74 15.33L21.3 9.33C21.2065 9.2264 21.0924 9.14353 20.9649 9.08669C20.8375 9.02986 20.6995 9.00033 20.56 9H13.56C13.2277 8.99603 12.898 9.05756 12.5895 9.18105C12.281 9.30455 11.9999 9.4876 11.7622 9.71975C11.5245 9.9519 11.3348 10.2286 11.204 10.5341C11.0732 10.8395 11.0039 11.1677 11 11.5V26.5C11.0039 26.8322 11.0732 27.1605 11.204 27.4659C11.3348 27.7714 11.5245 28.0481 11.7622 28.2802C11.9999 28.5124 12.281 28.6954 12.5895 28.8189C12.898 28.9424 13.2277 29.004 13.56 29H24.44C24.7723 29.004 25.102 28.9424 25.4105 28.8189C25.719 28.6954 26.0001 28.5124 26.2378 28.2802C26.4755 28.0481 26.6652 27.7714 26.796 27.4659C26.9268 27.1605 26.9961 26.8322 27 26.5V16C26.9994 15.7522 26.9067 15.5134 26.74 15.33ZM21 12L23.74 15H21.74C21.6353 14.9937 21.5329 14.9666 21.4387 14.9202C21.3446 14.8739 21.2607 14.8093 21.1918 14.7302C21.1229 14.651 21.0704 14.559 21.0375 14.4594C21.0046 14.3598 20.9918 14.2546 21 14.15V12ZM24.44 27H13.56C13.4904 27.004 13.4206 26.9943 13.3548 26.9714C13.2889 26.9484 13.2282 26.9127 13.1762 26.8662C13.1242 26.8198 13.0818 26.7635 13.0516 26.7007C13.0214 26.6378 13.0038 26.5696 13 26.5V11.5C13.0038 11.4304 13.0214 11.3622 13.0516 11.2993C13.0818 11.2365 13.1242 11.1802 13.1762 11.1338C13.2282 11.0873 13.2889 11.0516 13.3548 11.0286C13.4206 11.0057 13.4904 10.9959 13.56 11H19V14.15C18.9839 14.8866 19.2598 15.5997 19.7675 16.1337C20.2752 16.6676 20.9735 16.979 21.71 17H25V26.5C24.9962 26.5696 24.9786 26.6378 24.9484 26.7007C24.9182 26.7635 24.8758 26.8198 24.8238 26.8662C24.7718 26.9127 24.7111 26.9484 24.6452 26.9714C24.5794 26.9943 24.5096 27.004 24.44 27Z" fill="#FCCF10"/>
+                            </svg>
+                            <div class="grid content-center">
+                                <h4 class="text-3xs lg:text-xs font-semibold text-dark-650">Website desain brief.docx</h4>
+                                <span class="text-3xs lg:text-xs font-semibold text-dark-100">1.2 MB</span>
+                            </div>
+                            <div class="grid content-center ml-2">
+                                <button class="border p-0.5 rounded-md">
+                                    <svg class="w-2.5 lg:w-5" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M17.5 12.5V15.8333C17.5 16.2754 17.3244 16.6993 17.0118 17.0118C16.6993 17.3244 16.2754 17.5 15.8333 17.5H4.16667C3.72464 17.5 3.30072 17.3244 2.98816 17.0118C2.67559 16.6993 2.5 16.2754 2.5 15.8333V12.5" stroke="#8A8A8A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <path d="M5.8335 8.33331L10.0002 12.5L14.1668 8.33331" stroke="#8A8A8A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <path d="M10 12.5V2.5" stroke="#8A8A8A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+                        <div>
+                            <img class="w-20 lg:w-32 rounded-md" src="img/chatBubble2.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
